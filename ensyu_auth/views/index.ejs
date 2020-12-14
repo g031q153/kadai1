@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%= user.username %> ,ようこそカロリー計算サイトへ </p>
+    <h1>カロリー計算</h1>
+    <form>
+      <input type="button" value="材料から食事を登録" onclick="location.href='http://localhost:3000/calorie/material'"/>
+      <input type="button" value="料理名から食事を登録" onclick="location.href='http://localhost:3000/calorie/cuisine'"/>
+      <input type="button" value="有酸素運動の登録" onclick="location.href='http://localhost:3000/calorie/aerobic'"/>
+      <input type="button" value="筋肉トレーニング運動の登録" onclick="location.href='http://localhost:3000/calorie/muscle'"/>
+      <input type="button" value="カロリーデータ参照" onclick="location.href='http://localhost:3000/calorie/dete'"/>
+    </form>
+    <h1>ユーザ情報について</h1>
+    <form>
+    <input type="button" value="登録情報の変更" onclick="location.href='http://localhost:3000/users/update'"/>
+    <input type="button" value="登録情報の削除" onclick="location.href='http://localhost:3000/users/delete'"/>
+    </form>
+  </body>
+</html>
